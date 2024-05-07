@@ -6,7 +6,7 @@ import Link from "next/link"
 const NavBar: React.FC = () => {
 
   const [isExpanded, setIsExpanded] = useState(false)
-  const btnClassName = isExpanded ? 'bg-close-menu w-6 h-6 bg-cover bg-center cursor-pointer transition-all z-40 md:hidden' : ' w-6 h-6 bg-cover bg-center cursor-pointer transition-all z-40 md:hidden bg-open-menu'
+  const btnClassName = isExpanded ? 'bg-close-menu w-6 h-6 bg-cover bg-center cursor-pointer transition-all z-40 md:hidden' : 'w-6 h-6 bg-cover bg-center cursor-pointer transition-all z-40 md:hidden bg-open-menu'
 
   const changeMenuIcon = () => {
     setIsExpanded(!isExpanded)

@@ -8,9 +8,9 @@ const Home = () => {
       <NavBar />
 
 
-      <section className="mt-6 mb-4 h-[40vh] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center">
+      <section className="mt-10 mb-10 h-[40vh] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center">
         <aside className="md:order-1">
-          <img className="w-52 lg:w-80" src="/computadora.png" />
+          <img className="w-52" src="/computadora.png" />
         </aside>
         <div className="font-bebas flex flex-col animate-duration-slower animate-fade-in-right p-4  mx-2 justify-end items-center">
           <div>
@@ -25,15 +25,15 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="w-[90dvw] mx-[5dvw] bg-transparent h-[50dvh] flex justify-between items-end animate-slide-in-top">
-        <div className="w-1 h-[35dvh] bg-purple-600 shadowPurple" />
-        <div className="w-1 bg-green-500 h-[45dvh] shadowGreen" />
-        <div className="w-1 bg-pink-700 h-[25dvh] shadowPink" />
-        <div className="w-1 bg-blue-500 h-[15dvh] shadowBlue" />
-        <div className="w-1 bg-blue-500 h-[15dvh] shadowBlue" />
-        <div className="w-1 bg-pink-700 h-[25dvh] shadowPink" />
-        <div className="w-1 bg-green-500 h-[45dvh] shadowGreen" />
-        <div className="w-1 h-[35dvh] bg-purple-600 shadowPurple" />
+      <section className="mx-6 bg-transparent h-[50dvh] flex justify-between items-end animate-slide-in-top">
+        <div className="w-1 h-[35dvh] bg-purple-600 shadowPurple lg:h-[40dvh]" />
+        <div className="w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh]" />
+        <div className="w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh]" />
+        <div className="w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh]" />
+        <div className="w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh]" />
+        <div className="w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh]" />
+        <div className="w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh]" />
+        <div className="w-1 h-[35dvh] bg-purple-600 shadowPurple lg:h-[40dvh]" />
       </section>
 
       <section className="bg-slate-950 w-full h-[400px]">
