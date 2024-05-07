@@ -1,14 +1,6 @@
-import { useState } from "react"
-
 import NavBar from "@/components/NavBar"
 
 const Home = () => {
-
-
-  const initialClassName = "bg-cyan-500 animate-fade-in-right py-2 px-2"
-
-  const words = ["Web Development Enthusiast"]
-
 
 
   return (
@@ -16,9 +8,9 @@ const Home = () => {
       <NavBar />
 
 
-      <section className="mt-4 mb-4 h-[40vh] flex flex-col items-center justify-center md:flex-row gap-4 md:items-end">
-        <aside className="lg:order-1">
-          <img className="w-52 shadowImg lg:w-80" src="/laptop.png" />
+      <section className="mt-6 mb-4 h-[40vh] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center">
+        <aside className="md:order-1">
+          <img className="w-52 lg:w-80" src="/computadora.png" />
         </aside>
         <div className="font-bebas flex flex-col animate-duration-slower animate-fade-in-right p-4  mx-2 justify-end items-center">
           <div>
