@@ -16,7 +16,7 @@ const Home = () => {
       <NavBar />
 
 
-      <section className="h-[40vh] flex flex-col items-center justify-center lg:flex-row gap-4">
+      <section className="mt-4 mb-4 h-[40vh] flex flex-col items-center justify-center md:flex-row gap-4 md:items-end">
         <aside className="lg:order-1">
           <img className="w-52 shadowImg lg:w-80" src="/laptop.png" />
         </aside>
@@ -33,15 +33,15 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="w-[90dvw] mx-[5dvw] bg-transparent h-[55dvh] flex justify-between items-end animate-slide-in-top">
-        <div className="w-1 h-[40dvh] bg-purple-600 shadowPurple" />
-        <div className="w-1 bg-green-500 h-[50dvh] shadowGreen" />
-        <div className="w-1 bg-pink-700 h-[30dvh] shadowPink" />
-        <div className="w-1 bg-blue-500 h-[20dvh] shadowBlue" />
-        <div className="w-1 bg-blue-500 h-[20dvh] shadowBlue" />
-        <div className="w-1 bg-pink-700 h-[30dvh] shadowPink" />
-        <div className="w-1 bg-green-500 h-[50dvh] shadowGreen" />
-        <div className="w-1 h-[40dvh] bg-purple-600 shadowPurple" />
+      <section className="w-[90dvw] mx-[5dvw] bg-transparent h-[50dvh] flex justify-between items-end animate-slide-in-top">
+        <div className="w-1 h-[35dvh] bg-purple-600 shadowPurple" />
+        <div className="w-1 bg-green-500 h-[45dvh] shadowGreen" />
+        <div className="w-1 bg-pink-700 h-[25dvh] shadowPink" />
+        <div className="w-1 bg-blue-500 h-[15dvh] shadowBlue" />
+        <div className="w-1 bg-blue-500 h-[15dvh] shadowBlue" />
+        <div className="w-1 bg-pink-700 h-[25dvh] shadowPink" />
+        <div className="w-1 bg-green-500 h-[45dvh] shadowGreen" />
+        <div className="w-1 h-[35dvh] bg-purple-600 shadowPurple" />
       </section>
 
       <section className="bg-slate-950 w-full h-[400px]">
