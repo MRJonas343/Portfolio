@@ -8,7 +8,7 @@ const Home = () => {
       <NavBar />
 
 
-      <section className="mt-10 mb-10 h-[40vh] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center">
+      <section className="mt-20 lg:mt-10 mb-10 h-[40vh] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center">
         <aside className="md:order-1">
           <img className="w-52" src="/computadora.png" />
         </aside>
