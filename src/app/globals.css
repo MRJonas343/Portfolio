@@ -21,3 +21,19 @@ body {
 .bg-close-menu {
   background-image: url(../../public/icons8-cerrar-ventana-100.png);
 }
+
+.shadowPurple {
+  box-shadow: #db00fd 0px 0px 20px;
+}
+
+.shadowGreen {
+  box-shadow: #15cf0b 0px 0px 20px;
+}
+
+.shadowPink {
+  box-shadow: #de10ab 0px 0px 20px;
+}
+
+.shadowBlue {
+  box-shadow: #0f73d7 0px 0px 20px;
+}
