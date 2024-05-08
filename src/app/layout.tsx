@@ -19,7 +19,7 @@ const oswald = Oswald({
 
 
 export const metadata: Metadata = {
-  title: "Portfolio",
+  title: "Jonas Rosales",
   description: "Welcome to my portfolio, where I showcase my projects and skills.",
 };
 
