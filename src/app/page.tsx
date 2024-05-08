@@ -77,16 +77,15 @@ const Home = () => {
       <section className="bg-slate-950 w-full h-[1000px]">
         <p className="text-4xl text-white pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</p>
 
-        <section className="grid grid-cols-2 gap-10 mx-6 h-[800px]">
-          <article className="outline outline-blue-600  h-[600px] flex p-4">
-            <div className="flex w-full justify-center">
-              <img className="w-full h-56" src="/BeeSMRT.webp" />
+        <section className="flex flex-col gap-4 mx-4 h-[800px]">
+          <article className="outline outline-blue-600  h-[700px] flex flex-row">
+            <div className="w-1/3 flex p-3">
+              <img className="w-full " src="/BeeSMRT.png" />
             </div>
-            <h3></h3>
-            <p></p>
-            <div>
+            <div className="w-2/3 p-3">
+              <h3 className="text-white text-2xl font-bebas py-4 text-center">BeeSMRT</h3>
+              <p className="text-white font-oswald">BeeSMRT is a web application that helps users to improve their English levels through role playing games, in this application I have implemented a lot of technologies like react, express, and a lot of libraries.</p>
               <section>
-
               </section>
               <button></button>
             </div>
