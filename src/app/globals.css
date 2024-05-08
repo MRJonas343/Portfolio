@@ -23,22 +23,44 @@ body {
 }
 
 .shadowPurple {
+  transition: ease-in-out 1s;
+}
+
+.shadowPurpleBright {
   box-shadow: #db00fd 0px 0px 40px;
   filter: brightness(2);
+  transition: ease-in-out 1s;
 }
 
 .shadowGreen {
+  transition: ease-in-out 1s;
+}
+
+.shadowGreenBright {
   box-shadow: #15cf0b 0px 0px 20px;
   filter: brightness(2);
+  transition: ease-in-out 1s;
 }
 
 .shadowPink {
+  filter: brightness(2);
+  transition: ease-in-out 1s;
+}
+
+.shadowPinkBright {
   box-shadow: #de10ab 0px 0px 20px;
   filter: brightness(2);
+  transition: ease-in-out 1s;
 }
 
 .shadowBlue {
+  transition: ease-in-out 1s;
+}
+
+.shadowBlueBright {
   box-shadow: #0f73d7 0px 0px 20px;
+  filter: brightness(2);
+  transition: ease-in-out 1s;
 }
 
 .textShadow {

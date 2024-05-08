@@ -1,12 +1,35 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import NavBar from "@/components/NavBar"
 
 const Home = () => {
 
 
+  const [purpleClassName, setPurpleClassName] = useState("w-1 h-[35dvh] bg-purple-600 shadowPurple lg:h-[40dvh]")
+  const [greenClassName, setGreenClassName] = useState("w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh]")
+  const [pinkClassName, setPinkClassName] = useState("w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh]")
+  const [blueClassName, setBlueClassName] = useState("w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh]")
+
+  useEffect(() => {
+    setInterval(() => {
+      setPurpleClassName("w-1 h-[35dvh] bg-purple-600 shadowPurple lg:h-[40dvh] shadowPurpleBright")
+      setGreenClassName("w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh] shadowGreenBright")
+      setPinkClassName("w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh] shadowPinkBright")
+      setBlueClassName("w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh] shadowBlueBright")
+    }, 2000)
+    setInterval(() => {
+      setPurpleClassName("w-1 h-[35dvh] bg-purple-600 shadowPurple lg:h-[40dvh]")
+      setGreenClassName("w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh]")
+      setPinkClassName("w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh]")
+      setBlueClassName("w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh]")
+    }, 4000)
+  }, [])
+
+
   return (
     <>
       <NavBar />
-
 
       <section className="mt-20 lg:mt-10 mb-10 h-[40vh] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center">
         <aside className="md:order-1">
@@ -26,14 +49,14 @@ const Home = () => {
       </section>
 
       <section className="mx-6 bg-transparent h-[50dvh] flex justify-between items-end animate-slide-in-top">
-        <div className="w-1 h-[35dvh] bg-purple-600 shadowPurple lg:h-[40dvh]" />
-        <div className="w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh]" />
-        <div className="w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh]" />
-        <div className="w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh]" />
-        <div className="w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh]" />
-        <div className="w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh]" />
-        <div className="w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh]" />
-        <div className="w-1 h-[35dvh] bg-purple-600 shadowPurple lg:h-[40dvh]" />
+        <div className={purpleClassName} />
+        <div className={greenClassName} />
+        <div className={pinkClassName} />
+        <div className={blueClassName} />
+        <div className={blueClassName} />
+        <div className={pinkClassName} />
+        <div className={greenClassName} />
+        <div className={purpleClassName} />
       </section>
 
       <section className="bg-slate-950 w-full h-[400px]">
