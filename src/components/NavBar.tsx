@@ -15,7 +15,7 @@ const NavBar: React.FC = () => {
   return (
     <nav className="w-[95%] mx-auto overflow-hidden h-9 mt-4 flex items-center justify-between font-bebas text-3xl text-3d text-white">
       <Link href='/' className="w-1/3 max-w-[240px] hover:scale-110 ease-in-out duration-200">
-        <img alt="logo" src="/logoJon.webp" className="w-40"></img>
+        <p className="p-2 text-blue-500 textShadowTitle">Jonas Rosales</p>
       </Link>
 
       <label htmlFor="btn-open-menu" className={btnClassName} onClick={changeMenuIcon}>
