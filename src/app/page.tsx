@@ -74,8 +74,37 @@ const Home = () => {
         <div className={purpleClassName} />
       </section>
 
-      <section className="bg-slate-950 w-full h-[400px]">
-        <p className="text-4xl text-white font-bebas text-center pt-5 animate-slide-in-bottom">Projects</p>
+      <section className="bg-slate-950 w-full h-[1000px]">
+        <p className="text-4xl text-white pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</p>
+
+        <section className="grid grid-cols-2 gap-10 mx-6 h-[800px]">
+          <article className="outline outline-blue-600  h-[600px] flex p-4">
+            <div className="flex w-full justify-center">
+              <img className="w-full h-56" src="/BeeSMRT.webp" />
+            </div>
+            <h3></h3>
+            <p></p>
+            <div>
+              <section>
+
+              </section>
+              <button></button>
+            </div>
+          </article>
+
+          <article className="outline outline-blue-600  h-[400px] flex">
+
+          </article>
+
+          <article className="outline outline-blue-600  h-[400px] flex">
+
+          </article>
+
+          <article className="outline outline-blue-600  h-[400px] flex">
+
+          </article>
+
+        </section>
       </section>
 
 

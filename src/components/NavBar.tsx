@@ -36,6 +36,9 @@ const NavBar: React.FC = () => {
             <li className="hover:scale-110 hoverText hoverTextPink">
               <Link href='/About'>About</Link>
             </li>
+            <li className="hover:scale-110 hoverText hoverTextPink">
+              <Link href='/About'>Contact</Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -49,6 +52,9 @@ const NavBar: React.FC = () => {
         </li>
         <li className="hover:scale-110 hoverText hoverTextPink">
           <Link href='/About'>About</Link>
+        </li>
+        <li className="hover:scale-110 hoverText hoverTextPink">
+          <Link href='/About'>Contact</Link>
         </li>
       </ul>
 
