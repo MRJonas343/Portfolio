@@ -43,7 +43,6 @@ body {
 }
 
 .shadowPink {
-  filter: brightness(2);
   transition: ease-in-out 1s;
 }
 
@@ -64,10 +63,54 @@ body {
 }
 
 .textShadow {
+  transition: ease-in-out 1s;
+}
+
+.textShadowBright {
+  text-shadow: 0px 0px 20px;
+  filter: brightness(2);
+  transition: ease-in-out 1s;
+}
+
+.shadowImg {
+  transition: ease-in-out 1s;
+}
+
+.shadowImgBright {
+  filter: drop-shadow(0px 0px 10px #00bfff);
+  transition: ease-in-out 1s;
+}
+
+.iconShadow {
+  transition: ease-in-out 1s;
+}
+
+.iconShadowBright {
+  filter: drop-shadow(0px 0px 20px #a200ff);
+  transition: ease-in-out 1s;
+}
+
+.hoverTextBlue:hover {
+  transition: ease-in-out 0.3s;
+  color: #00bfff;
   text-shadow: 0px 0px 20px;
   filter: brightness(2);
 }
 
-.shadowImg {
-  filter: drop-shadow(0px 0px 20px #1e00ff);
+.hoverTextPink:hover {
+  transition: ease-in-out 0.3s;
+  color: #ae00ff;
+  text-shadow: 0px 0px 20px;
+  filter: brightness(2);
+}
+
+.hoverTextGreen:hover {
+  transition: ease-in-out 0.3s;
+  color: #00ff26;
+  text-shadow: 0px 0px 20px;
+  filter: brightness(2);
+}
+
+.hoverText {
+  transition: ease-in-out 0.3s;
 }
