@@ -45,13 +45,13 @@ const Home = () => {
     <>
       <NavBar />
 
-      <section className="mt-20 lg:mt-10 mb-10 h-[40vh] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center md:mb-0">
-        <aside className="md:order-1 w-40 h-40 md:w-52 bg-blue-500">
-          <img />
+      <section className="mt-20 lg:mt-10 mb-10 h-[350px] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center md:mb-0">
+        <aside className="md:order-1 w-40 h-40 md:w-52">
+          <img src="/hombre.png" />
         </aside>
         <div className="font-bebas flex flex-col animate-duration-slower animate-fade-in-right p-4  mx-2 justify-end items-center">
           <div>
-            <h2 className={textBlueClassName}>Jonas Rosales</h2>
+            <h2 className={"text-white text-3xl"}>Jonas Rosales</h2>
             <span className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300 dark:before:border-neutral-500 dark:after:border-neutral-500" />
             <p className={textGreenClassName}>Software Engineering Student</p>
             <div className="flex py-2 gap-3 items-center">
@@ -61,7 +61,7 @@ const Home = () => {
             <div className="flex w-full justify-between py-4 items-center">
               <GitHubIcon sx={{ fontSize: '3rem' }} className="iconGithub cursor-pointer" />
               <LinkedInIcon sx={{ fontSize: '3rem' }} className="iconLinkedIn cursor-pointer" />
-              <button className="rounded-sm font-bebas py-2 w-28 text-lg shadowBlueBoton">Get CV</button>
+              <button className="rounded-sm font-bebas py-2 w-28 text-lg shadowBlueBoton">Get my CV</button>
             </div>
 
           </div>
