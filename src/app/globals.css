@@ -120,3 +120,43 @@ body {
 .hoverText {
   transition: ease-in-out 0.3s;
 }
+
+.shadowBlueBoton {
+  outline-style: solid;
+  outline-color: #0f73d7;
+  box-shadow: #0f73d7 0px 0px 20px;
+  filter: brightness(2);
+  transition: 0.5s;
+  text-shadow: 0px 0px 20px;
+  color: #0f73d7;
+}
+
+.shadowBlueBoton:hover {
+  outline-style: solid;
+  outline-color: #ec03f4;
+  box-shadow: #ec03f4 0px 0px 20px;
+  filter: brightness(2);
+  transition: 0.5s;
+  text-shadow: 0px 0px 20px;
+  color: #ec03f4;
+}
+
+.shadowYellowBoton {
+  outline-style: solid;
+  outline-color: #cad70f;
+  box-shadow: #cad70f 0px 0px 20px;
+  filter: brightness(2);
+  transition: 0.5s;
+  text-shadow: 0px 0px 20px;
+  color: #cad70f;
+}
+
+.shadowYellowBoton:hover {
+  outline-style: solid;
+  outline-color: #05fa05;
+  box-shadow: #05fa05 0px 0px 20px;
+  filter: brightness(2);
+  transition: 0.5s;
+  text-shadow: 0px 0px 20px;
+  color: #05fa05;
+}

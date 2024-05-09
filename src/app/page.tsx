@@ -13,7 +13,6 @@ const Home = () => {
   const [textBlueClassName, setTextBlueClassName] = useState("text-3xl lg:text-4xl text-blue-500 textShadow")
   const [textGreenClassName, setTextGreenClassName] = useState("text-4xl lg:text-5xl text-green-500 textShadow")
   const [textPurple, setTextPurple] = useState("text-4xl lg:text-5xl pt-1 text-purple-700 textShadow")
-  const [imgClassName, setImgClassName] = useState("w-40 md:w-52 shadowImg")
   const [iconClassName, setIconClassName] = useState("w-10 h-10 iconShadow")
 
   useEffect(() => {
@@ -25,7 +24,6 @@ const Home = () => {
       setTextBlueClassName("text-3xl lg:text-4xl text-blue-500 textShadowBright")
       setTextGreenClassName("text-4xl lg:text-5xl text-green-500 textShadowBright")
       setTextPurple("text-4xl lg:text-5xl pt-1 text-purple-700 textShadowBright")
-      setImgClassName("w-40 md:w-52 shadowImgBright")
       setIconClassName("w-10 h-10 iconShadowBright")
     }, 2000)
     setInterval(() => {
@@ -36,7 +34,6 @@ const Home = () => {
       setTextBlueClassName("text-3xl lg:text-4xl text-blue-500 textShadow")
       setTextGreenClassName("text-4xl  lg:text-5xl text-green-500 textShadow")
       setTextPurple("text-4xl lg:text-5xl pt-1 text-purple-700 textShadow")
-      setImgClassName("w-40 md:w-52 shadowImg")
       setIconClassName("w-10 h-10 iconShadow")
     }, 4000)
   }, [])
@@ -47,8 +44,8 @@ const Home = () => {
       <NavBar />
 
       <section className="mt-20 lg:mt-10 mb-10 h-[40vh] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center md:mb-0">
-        <aside className="md:order-1">
-          <img className={imgClassName} src="/computadora.png" />
+        <aside className="md:order-1 w-40 h-40 md:w-52 bg-blue-500">
+          <img />
         </aside>
         <div className="font-bebas flex flex-col animate-duration-slower animate-fade-in-right p-4  mx-2 justify-end items-center">
           <div>
@@ -75,35 +72,45 @@ const Home = () => {
       </section>
 
       <section className="bg-slate-950 w-full h-[1000px]">
-        <p className="text-4xl text-white pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</p>
+        <p className="text-5xl text-green-500 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</p>
 
-        <section className="flex flex-col gap-4 mx-4 h-[800px]">
-          <article className="outline outline-blue-600  h-[700px] flex flex-row">
-            <div className="w-1/3 flex p-3">
-              <img className="w-full " src="/BeeSMRT.png" />
+        <section className="p-6 flex flex-col lg:flex-row">
+
+          <div className="lg:w-[40%]">
+            <div className="flex w-full justify-center lg:items-center lg:h-full">
+              <img className="w-[60%]" src="/BeeSMRTImg.png" alt="BeeSMRT" />
             </div>
-            <div className="w-2/3 p-3">
-              <h3 className="text-white text-2xl font-bebas py-4 text-center">BeeSMRT</h3>
-              <p className="text-white font-oswald">BeeSMRT is a web application that helps users to improve their English levels through role playing games, in this application I have implemented a lot of technologies like react, express, and a lot of libraries.</p>
-              <section>
-              </section>
-              <button></button>
+          </div>
+
+          <div className="lg:w-[60%] lg:p-10">
+            <div className="p-6">
+              <h3 className="text-4xl font-bebas textShadowBright text-pink-600">BeeSMRT Games</h3>
+              <p className="text-white font-oswald">BeeSMRT is a web application that allows users to practice their English through role-playing games, this is my most ambitious application in which I have implemented a lot of technologies and libraries and I am not even 10% of the final project.</p>
             </div>
-          </article>
 
-          <article className="outline outline-blue-600  h-[400px] flex">
-
-          </article>
-
-          <article className="outline outline-blue-600  h-[400px] flex">
-
-          </article>
-
-          <article className="outline outline-blue-600  h-[400px] flex">
-
-          </article>
+            <section className="flex py-4">
+              <article className="flex gap-8 flex-col w-4/6">
+                <aside className="flex justify-around">
+                  <img className="w-10" src="/vitejs.svg" alt="" />
+                  <img className="w-10" src="/typescript.svg" alt="" />
+                  <img className="w-10" src="/react.svg" alt="" />
+                </aside>
+                <aside className="flex justify-around">
+                  <img className="w-10" src="/nodejs.svg" alt="" />
+                  <img className="w-10" src="/expressjs_dark.svg" alt="" />
+                  <img className="w-10" src="/mysql.svg" alt="" />
+                </aside>
+              </article>
+              <aside className="w-2/6 flex flex-col justify-between">
+                <button className="rounded-sm font-bebas py-2 text-lg shadowBlueBoton">view code</button>
+                <button className="rounded-sm font-bebas py-2 text-lg shadowYellowBoton">view project</button>
+              </aside>
+            </section>
+          </div>
 
         </section>
+
+
       </section>
 
 
