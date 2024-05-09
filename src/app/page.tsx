@@ -12,9 +12,8 @@ const Home = () => {
   const [greenClassName, setGreenClassName] = useState("w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh]")
   const [pinkClassName, setPinkClassName] = useState("w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh]")
   const [blueClassName, setBlueClassName] = useState("w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh]")
-  const [textBlueClassName, setTextBlueClassName] = useState("text-3xl lg:text-4xl text-blue-500 textShadow")
-  const [textGreenClassName, setTextGreenClassName] = useState("text-4xl lg:text-5xl text-green-500 textShadow")
-  const [textPurple, setTextPurple] = useState("text-4xl lg:text-5xl pt-1 text-purple-700 textShadow")
+  const [textGreenClassName, setTextGreenClassName] = useState("text-3xl lg:text-5xl text-green-500 textShadow")
+  const [textPurple, setTextPurple] = useState("text-3xl lg:text-5xl pt-1 text-purple-700 textShadow")
   const [iconClassName, setIconClassName] = useState("w-10 h-10 iconShadow")
 
   useEffect(() => {
@@ -23,9 +22,8 @@ const Home = () => {
       setGreenClassName("w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh] shadowGreenBright md:w-3")
       setPinkClassName("w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh] shadowPinkBright md:w-3")
       setBlueClassName("w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh] shadowBlueBright md:w-3")
-      setTextBlueClassName("text-3xl lg:text-4xl text-blue-500 textShadowBright")
-      setTextGreenClassName("text-4xl lg:text-5xl text-green-500 textShadowBright")
-      setTextPurple("text-4xl lg:text-5xl pt-1 text-purple-700 textShadowBright")
+      setTextGreenClassName("text-3xl lg:text-5xl text-green-500 textShadowBright")
+      setTextPurple("text-3xl lg:text-5xl pt-1 text-purple-700 textShadowBright")
       setIconClassName("w-10 h-10 iconShadowBright")
     }, 2000)
     setInterval(() => {
@@ -33,7 +31,6 @@ const Home = () => {
       setGreenClassName("w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh] md:w-3")
       setPinkClassName("w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh] md:w-3")
       setBlueClassName("w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh] md:w-3")
-      setTextBlueClassName("text-3xl lg:text-4xl text-blue-500 textShadow")
       setTextGreenClassName("text-4xl  lg:text-5xl text-green-500 textShadow")
       setTextPurple("text-4xl lg:text-5xl pt-1 text-purple-700 textShadow")
       setIconClassName("w-10 h-10 iconShadow")
@@ -59,9 +56,9 @@ const Home = () => {
               <p className={textPurple}>Web Development Enthusiast</p>
             </div>
             <div className="flex w-full justify-between py-4 items-center">
-              <GitHubIcon sx={{ fontSize: '3rem' }} className="iconGithub cursor-pointer" />
-              <LinkedInIcon sx={{ fontSize: '3rem' }} className="iconLinkedIn cursor-pointer" />
-              <button className="rounded-sm font-bebas py-2 w-28 text-lg shadowBlueBoton">Get my CV</button>
+              <GitHubIcon sx={{ fontSize: '2rem' }} className="iconGithub cursor-pointer" />
+              <LinkedInIcon sx={{ fontSize: '2rem' }} className="iconLinkedIn cursor-pointer" />
+              <button className="rounded-sm font-bebas py-2 w-24 text-md shadowBlueBoton">Get my CV</button>
             </div>
 
           </div>
@@ -87,7 +84,7 @@ const Home = () => {
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
-              <img className="w-[60%]" src="/BeeSMRTImg.png" alt="BeeSMRT" />
+              <img className="w-[60%] max-w-[360px]" src="/BeeSMRTImg.png" alt="BeeSMRT" />
             </div>
           </div>
 
@@ -122,7 +119,7 @@ const Home = () => {
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
-              <img className="w-[60%]" src="/BeeSMRTImg.png" alt="BeeSMRT" />
+              <img className="w-[60%] max-w-[360px]" src="/BeeSMRTImg.png" alt="BeeSMRT" />
             </div>
           </div>
 
@@ -157,7 +154,7 @@ const Home = () => {
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
-              <img className="w-[60%]" src="/Manage.png" alt="Mangment" />
+              <img className="w-[60%] max-w-[360px]" src="/Manage.png" alt="Mangment" />
             </div>
           </div>
 
