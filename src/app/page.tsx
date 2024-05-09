@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react"
 import NavBar from "@/components/NavBar"
+import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Home = () => {
 
@@ -56,6 +58,12 @@ const Home = () => {
               <img className={iconClassName} src="/plus.png" />
               <p className={textPurple}>Web Development Enthusiast</p>
             </div>
+            <div className="flex w-full justify-between py-4 items-center">
+              <GitHubIcon sx={{ fontSize: '3rem' }} className="iconGithub cursor-pointer" />
+              <LinkedInIcon sx={{ fontSize: '3rem' }} className="iconLinkedIn cursor-pointer" />
+              <button className="rounded-sm font-bebas py-2 w-28 text-lg shadowBlueBoton">Get CV</button>
+            </div>
+
           </div>
         </div>
       </section>
@@ -71,7 +79,8 @@ const Home = () => {
         <div className={purpleClassName} />
       </section>
 
-      <section className="bg-slate-950 w-full h-auto pb-4">
+
+      <section className="w-full h-auto pb-4">
         <p className="text-5xl text-green-500 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</p>
 
         <section className="p-6 flex flex-col lg:flex-row mb-4">
@@ -82,7 +91,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="lg:w-[60%] lg:p-10">
+          <div className="lg:w-[60%] lg:p-10 lg:items-center">
             <div className="p-6">
               <h3 className="text-4xl font-bebas textShadowBright text-pink-600">BeeSMRT Games</h3>
               <p className="text-white font-oswald">BeeSMRT is a web application that allows users to practice their English through role-playing games, this is my most ambitious application in which I have implemented a lot of technologies and libraries and I am not even 10% of the final project.</p>
@@ -109,7 +118,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="p-6 flex flex-col lg:flex-row">
+        <section className="p-6 flex flex-col lg:flex-row mb-5 lg:mb-6">
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
