@@ -71,10 +71,10 @@ const Home = () => {
         <div className={purpleClassName} />
       </section>
 
-      <section className="bg-slate-950 w-full h-[1000px]">
+      <section className="bg-slate-950 w-full h-auto pb-4">
         <p className="text-5xl text-green-500 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</p>
 
-        <section className="p-6 flex flex-col lg:flex-row">
+        <section className="p-6 flex flex-col lg:flex-row mb-4">
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
@@ -107,11 +107,75 @@ const Home = () => {
               </aside>
             </section>
           </div>
-
         </section>
 
+        <section className="p-6 flex flex-col lg:flex-row">
+
+          <div className="lg:w-[40%]">
+            <div className="flex w-full justify-center lg:items-center lg:h-full">
+              <img className="w-[60%]" src="/BeeSMRTImg.png" alt="BeeSMRT" />
+            </div>
+          </div>
+
+          <div className="lg:w-[60%] lg:p-10">
+            <div className="p-6">
+              <h3 className="text-4xl font-bebas textShadowBright text-red-700">Portfolio</h3>
+              <p className="text-white font-oswald">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia perferendis laborum odio a ex, adipisci est atque repellendus nam sunt ullam officiis consequatur incidunt optio eum dolore. Consequuntur, cum optio.</p>
+            </div>
+
+            <section className="flex py-4">
+              <article className="flex gap-8 flex-col w-4/6">
+                <aside className="flex justify-around">
+                  <img className="w-12" src="/nextjs_logo_dark.svg" alt="" />
+                  <img className="w-10" src="/typescript.svg" alt="" />
+                  <img className="w-10" src="/react.svg" alt="" />
+                </aside>
+                <aside className="flex justify-around">
+                  <img className="w-10" src="/tailwindcss.svg" alt="" />
+                  <img className="w-10" src="/prisma_dark.svg" alt="" />
+                  <img className="w-6" src="/mongodb.svg" alt="" />
+                </aside>
+              </article>
+              <aside className="w-2/6 flex flex-col justify-between">
+                <button className="rounded-sm font-bebas py-2 text-lg shadowBlueBoton">view code</button>
+                <button className="rounded-sm font-bebas py-2 text-lg shadowYellowBoton">view project</button>
+              </aside>
+            </section>
+          </div>
+        </section>
+
+        <section className="p-6 flex flex-col lg:flex-row">
+
+          <div className="lg:w-[40%]">
+            <div className="flex w-full justify-center lg:items-center lg:h-full">
+              <img className="w-[60%]" src="/manage.png" alt="BeeSMRT" />
+            </div>
+          </div>
+
+          <div className="lg:w-[60%] lg:p-10">
+            <div className="p-6">
+              <h3 className="text-4xl font-bebas textShadowBright text-green-700">Managment Static Web Page</h3>
+              <p className="text-white font-oswald">Static website I developed when I was learning responsive design with Tailwind and semantic html.</p>
+            </div>
+
+            <section className="flex py-4">
+              <article className="flex gap-8 flex-col w-4/6">
+                <aside className="flex justify-around">
+                  <img className="w-12" src="/html5.svg" alt="" />
+                  <img className="w-10" src="/tailwindcss.svg" alt="" />
+                </aside>
+              </article>
+              <aside className="w-2/6 flex flex-col justify-between gap-5">
+                <button className="rounded-sm font-bebas py-2 text-lg shadowBlueBoton">view code</button>
+                <button className="rounded-sm font-bebas py-2 text-lg shadowYellowBoton">view project</button>
+              </aside>
+            </section>
+          </div>
+        </section>
 
       </section>
+
+
 
 
     </>
