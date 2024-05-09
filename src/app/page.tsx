@@ -148,7 +148,7 @@ const Home = () => {
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
-              <img className="w-[60%]" src="/manage.png" alt="BeeSMRT" />
+              <img className="w-[60%]" src="/Manage.png" alt="Mangment" />
             </div>
           </div>
 
