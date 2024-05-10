@@ -31,8 +31,8 @@ const Home = () => {
       setGreenClassName("w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh] md:w-3")
       setPinkClassName("w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh] md:w-3")
       setBlueClassName("w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh] md:w-3")
-      setTextGreenClassName("text-4xl  lg:text-5xl text-green-500 textShadow")
-      setTextPurple("text-4xl lg:text-5xl pt-1 text-purple-700 textShadow")
+      setTextGreenClassName("text-3xl  lg:text-5xl text-green-500 textShadow")
+      setTextPurple("text-3xl lg:text-5xl pt-1 text-purple-700 textShadow")
       setIconClassName("w-10 h-10 iconShadow")
     }, 4000)
   }, [])
@@ -43,7 +43,7 @@ const Home = () => {
       <NavBar />
 
       <section className="mt-20 lg:mt-10 mb-10 h-[350px] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center md:mb-0">
-        <aside className="md:order-1 w-40 h-40 md:w-52">
+        <aside className="md:order-1 w-32 h-40 md:w-52">
           <img src="/hombre.png" />
         </aside>
         <div className="font-bebas flex flex-col animate-duration-slower animate-fade-in-right p-4  mx-2 justify-end items-center">
