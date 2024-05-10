@@ -52,10 +52,10 @@ body {
 }
 
 .shadowPinkBright {
-  background-image: linear-gradient(rgb(190 24 93), 80%, transparent);
-  box-shadow: #de10ab 0px 0px 20px;
-  filter: brightness(2);
   transition: ease-in-out 1s;
+  background-image: linear-gradient(rgb(190 24 93), 80%, transparent);
+  box-shadow: rgb(190 24 93) 0px 0px 20px;
+  filter: brightness(2);
 }
 
 .shadowBlue {
