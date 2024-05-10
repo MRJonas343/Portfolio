@@ -58,7 +58,7 @@ const Home = () => {
             <div className="flex w-full justify-between py-4 items-center">
               <GitHubIcon sx={{ fontSize: '2rem' }} className="iconGithub cursor-pointer" />
               <LinkedInIcon sx={{ fontSize: '2rem' }} className="iconLinkedIn cursor-pointer" />
-              <button className="rounded-sm font-bebas py-2 w-24 text-md shadowBlueBoton">Get my CV</button>
+              <button className="rounded-sm font-bebas py-2 w-24 text-md shadowBlueBoton lg:w-28">Get my CV</button>
             </div>
 
           </div>
