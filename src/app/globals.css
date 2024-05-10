@@ -23,40 +23,48 @@ body {
 }
 
 .shadowPurple {
+  background-image: linear-gradient(rgb(147 51 234) 80%, transparent);
   transition: ease-in-out 1s;
 }
 
 .shadowPurpleBright {
+  background-image: linear-gradient(rgb(147 51 234) 80%, transparent);
   box-shadow: #db00fd 0px 0px 40px;
   filter: brightness(2);
   transition: ease-in-out 1s;
 }
 
 .shadowGreen {
+  background-image: linear-gradient(rgb(34 197 94) 80%, transparent);
   transition: ease-in-out 1s;
 }
 
 .shadowGreenBright {
+  background-image: linear-gradient(rgb(34 197 94) 80%, transparent);
   box-shadow: #15cf0b 0px 0px 20px;
   filter: brightness(2);
   transition: ease-in-out 1s;
 }
 
 .shadowPink {
+  background-image: linear-gradient(rgb(190 24 93), 80%, transparent);
   transition: ease-in-out 1s;
 }
 
 .shadowPinkBright {
+  background-image: linear-gradient(rgb(190 24 93), 80%, transparent);
   box-shadow: #de10ab 0px 0px 20px;
   filter: brightness(2);
   transition: ease-in-out 1s;
 }
 
 .shadowBlue {
+  background-image: linear-gradient(rgb(59 130 246), 80%, transparent);
   transition: ease-in-out 1s;
 }
 
 .shadowBlueBright {
+  background-image: linear-gradient(rgb(59 130 246), 80%, transparent);
   box-shadow: #0f73d7 0px 0px 20px;
   filter: brightness(2);
   transition: ease-in-out 1s;

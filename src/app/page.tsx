@@ -8,29 +8,29 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const Home = () => {
 
 
-  const [purpleClassName, setPurpleClassName] = useState("w-1 h-[35dvh] bg-purple-600 shadowPurple lg:h-[40dvh]")
-  const [greenClassName, setGreenClassName] = useState("w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh]")
-  const [pinkClassName, setPinkClassName] = useState("w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh]")
-  const [blueClassName, setBlueClassName] = useState("w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh]")
+  const [purpleClassName, setPurpleClassName] = useState("w-1 h-[35dvh] shadowPurple lg:h-[40dvh] md:w-3")
+  const [greenClassName, setGreenClassName] = useState("w-1 h-[45dvh] shadowGreen lg:h-[50dvh] md:w-3")
+  const [pinkClassName, setPinkClassName] = useState("w-1 h-[25dvh] shadowPink lg:h-[30dvh] md:w-3")
+  const [blueClassName, setBlueClassName] = useState("w-1 h-[15dvh] shadowBlue lg:h-[20dvh] md:w-3")
   const [textGreenClassName, setTextGreenClassName] = useState("text-3xl lg:text-5xl text-green-500 textShadow")
   const [textPurple, setTextPurple] = useState("text-3xl lg:text-5xl pt-1 text-purple-700 textShadow")
   const [iconClassName, setIconClassName] = useState("w-10 h-10 iconShadow")
 
   useEffect(() => {
     setInterval(() => {
-      setPurpleClassName("w-1 h-[35dvh] bg-purple-600 shadowPurple lg:h-[40dvh] shadowPurpleBright md:w-3")
-      setGreenClassName("w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh] shadowGreenBright md:w-3")
-      setPinkClassName("w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh] shadowPinkBright md:w-3")
-      setBlueClassName("w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh] shadowBlueBright md:w-3")
+      setPurpleClassName("w-1 h-[35dvh] shadowPurple lg:h-[40dvh] shadowPurpleBright md:w-3")
+      setGreenClassName("w-1 h-[45dvh] lg:h-[50dvh] shadowGreenBright md:w-3")
+      setPinkClassName("w-1 bg-pink-700 h-[25dvh] lg:h-[30dvh] shadowPinkBright md:w-3")
+      setBlueClassName("w-1 h-[15dvh] shadowBlue lg:h-[20dvh] shadowBlueBright md:w-3")
       setTextGreenClassName("text-3xl lg:text-5xl text-green-500 textShadowBright")
       setTextPurple("text-3xl lg:text-5xl pt-1 text-purple-700 textShadowBright")
       setIconClassName("w-10 h-10 iconShadowBright")
     }, 2000)
     setInterval(() => {
-      setPurpleClassName("w-1 h-[35dvh] bg-purple-600 shadowPurple lg:h-[40dvh] md:w-3")
-      setGreenClassName("w-1 bg-green-500 h-[45dvh] shadowGreen lg:h-[50dvh] md:w-3")
-      setPinkClassName("w-1 bg-pink-700 h-[25dvh] shadowPink lg:h-[30dvh] md:w-3")
-      setBlueClassName("w-1 bg-blue-500 h-[15dvh] shadowBlue lg:h-[20dvh] md:w-3")
+      setPurpleClassName("w-1 h-[35dvh] shadowPurple lg:h-[40dvh] md:w-3")
+      setGreenClassName("w-1 h-[45dvh] shadowGreen lg:h-[50dvh] md:w-3")
+      setPinkClassName("w-1 bg-pink-700 h-[25dvh] lg:h-[30dvh] md:w-3")
+      setBlueClassName("w-1 h-[15dvh] shadowBlue lg:h-[20dvh] md:w-3")
       setTextGreenClassName("text-3xl  lg:text-5xl text-green-500 textShadow")
       setTextPurple("text-3xl lg:text-5xl pt-1 text-purple-700 textShadow")
       setIconClassName("w-10 h-10 iconShadow")
