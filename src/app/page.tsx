@@ -42,8 +42,8 @@ const Home = () => {
     <>
       <NavBar />
 
-      <section className="mt-20 lg:mt-10 mb-10 h-[350px] flex flex-col items-center justify-center md:flex-row gap-4 md:items-center md:mb-0">
-        <aside className="md:order-1 w-32 h-40 md:w-52">
+      <section className="mt-16 lg:mt-10 h-[350px] flex flex-col items-center justify-center md:flex-row gap-4 md:mb-0 md:gap-14">
+        <aside className="md:order-1 w-28 h-40 md:w-52">
           <img src="/hombre.png" />
         </aside>
         <div className="font-bebas flex flex-col animate-duration-slower animate-fade-in-right p-4  mx-2 justify-end items-center">
