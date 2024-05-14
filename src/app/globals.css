@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 body {
   background-color: #151327;
 }
@@ -192,4 +191,12 @@ body {
   filter: brightness(2);
   color: #c300ff;
   transition: ease 0.5s;
+}
+
+.SkillContainer {
+  outline-style: solid;
+  outline-color: #1EE6FF;
+  box-shadow: #1EE6FF 0px 0px 20px;
+  transition: 0.5s;
+  color: #0f73d7;
 }

@@ -1,0 +1,82 @@
+[
+    {
+        "src": "/html5.svg",
+        "alt": "HTML5"
+    },
+    {
+        "src": "/css.svg",
+        "alt": "CSS3"
+    },
+    {
+        "src": "/bootstrap.svg",
+        "alt": "Bootstrap"
+    },
+    {
+        "src": "/tailwindcss.svg",
+        "alt": "TailwindCSS"
+    },
+    {
+        "src": "/java.svg",
+        "alt": "Java"
+    },
+    {
+        "src": "/php_dark.svg",
+        "alt": "php"
+    },
+    {
+        "src": "/javascript.svg",
+        "alt": "JavaScript"
+    },
+    {
+        "src": "/typescript.svg",
+        "alt": "TypeScript"
+    },
+    {
+        "src": "/react.svg",
+        "alt": "React"
+    },
+    {
+        "src": "/nextjs_logo_dark.svg",
+        "alt": "NextJS"
+    },
+    {
+        "src": "/vitejs.svg",
+        "alt": "ViteJS"
+    },
+    {
+        "src": "/nodejs.svg",
+        "alt": "NodeJS"
+    },
+    {
+        "src": "/expressjs_dark.svg",
+        "alt": "ExpressJS"
+    },
+    {
+        "src": "/mysql.svg",
+        "alt": "MySQL"
+    },
+    {
+        "src": "/sql-server.svg",
+        "alt": "SQL Server"
+    },
+    {
+        "src": "/firebase.svg",
+        "alt": "Firebase"
+    },
+    {
+        "src": "/mongodb.svg",
+        "alt": "MongoDB"
+    },
+    {
+        "src": "/prisma_dark.svg",
+        "alt": "Prisma"
+    },
+    {
+        "src": "/aws.svg",
+        "alt": "AWS"
+    },
+    {
+        "src": "/ubuntu.svg",
+        "alt": "Ubuntu Server"
+    }
+]

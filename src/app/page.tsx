@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from "react"
 import NavBar from "@/components/NavBar"
+import IconSkill from "@/components/IconSkill"
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Skils from "./Skills.json"
 
 const Home = () => {
-
 
   const [purpleClassName, setPurpleClassName] = useState("w-1 h-[35vh] shadowPurple lg:h-[40vh] md:w-3")
   const [greenClassName, setGreenClassName] = useState("w-1 h-[45vh] shadowGreen lg:h-[50vh] md:w-3")
@@ -77,8 +78,8 @@ const Home = () => {
       </section>
 
 
-      <section className="w-full h-auto pb-4">
-        <p className="text-5xl text-green-500 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</p>
+      <section className="w-full h-auto pb-4 px-4">
+        <h2 className="text-5xl text-green-500 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</h2>
 
         <section className="p-6 flex flex-col lg:flex-row mb-4">
 
@@ -178,6 +179,19 @@ const Home = () => {
             </section>
           </div>
         </section>
+
+
+        <h2 className="text-5xl text-purple-700 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Skills</h2>
+
+        <article className="grid grid-cols-2 gap-7 place-items-center mt-6 h-auto pb-4 md:grid-cols-4 lg:gap-12 lg:mx-10">
+          {Skils.map((skill, index) => {
+            return (
+              <IconSkill key={index} imgSrc={skill.src} altText={skill.alt} />
+            )
+          })}
+        </article>
+
+
 
       </section>
 
