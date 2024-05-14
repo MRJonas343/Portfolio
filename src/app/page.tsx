@@ -181,9 +181,9 @@ const Home = () => {
         </section>
 
 
-        <h2 className="text-5xl text-purple-700 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Skills</h2>
+        <h2 className="text-5xl text-[#0f73d7] textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Skills</h2>
 
-        <article className="grid grid-cols-2 gap-7 place-items-center mt-6 h-auto pb-4 md:grid-cols-4 lg:gap-12 lg:mx-10">
+        <article className="grid grid-cols-2 gap-7 place-items-center mt-6 h-auto pb-4 md:grid-cols-4 lg:gap-12 lg:mx-10 xl:mx-32">
           {Skils.map((skill, index) => {
             return (
               <IconSkill key={index} imgSrc={skill.src} altText={skill.alt} />
