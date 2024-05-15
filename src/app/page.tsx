@@ -78,7 +78,7 @@ const Home = () => {
       </section>
 
 
-      <section className="w-full h-auto pb-4 px-4">
+      <section className="w-full h-auto pb-4 px-2 md:px-4">
         <h2 className="text-5xl text-green-500 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</h2>
 
         <section className="p-6 flex flex-col lg:flex-row mb-4">
@@ -190,6 +190,8 @@ const Home = () => {
             )
           })}
         </article>
+
+        <h2 className="text-5xl text-orange-500    textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">About</h2>
 
 
 
