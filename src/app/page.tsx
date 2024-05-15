@@ -109,8 +109,8 @@ const Home = () => {
                 </aside>
               </article>
               <aside className="w-2/6 flex flex-col justify-between items-center">
-                <button className="rounded-sm font-bebas w-36 md:w-auto py-2 text-lg shadowBlueBoton">view code</button>
-                <button className="rounded-sm font-bebas w-36 md:w-auto  py-2 text-lg shadowYellowBoton">view project</button>
+                <button className="rounded-sm font-bebas w-28 md:w-full max-w-[272px] py-2 text-lg shadowBlueBoton">view code</button>
+                <button className="rounded-sm font-bebas w-28 md:w-full max-w-[272px]  py-2 text-lg shadowYellowBoton">view project</button>
               </aside>
             </section>
           </div>
@@ -144,8 +144,8 @@ const Home = () => {
                 </aside>
               </article>
               <aside className="w-2/6 items-center flex flex-col justify-between">
-                <button className="rounded-sm w-36 md:w-auto  font-bebas py-2 text-lg shadowBlueBoton">view code</button>
-                <button className="rounded-sm w-36 md:w-auto  font-bebas py-2 text-lg shadowYellowBoton">view project</button>
+                <button className="rounded-sm w-28 md:w-full max-w-[272px]  font-bebas py-2 text-lg shadowBlueBoton">view code</button>
+                <button className="rounded-sm w-28 md:w-full max-w-[272px]  font-bebas py-2 text-lg shadowYellowBoton">view project</button>
               </aside>
             </section>
           </div>
@@ -173,8 +173,8 @@ const Home = () => {
                 </aside>
               </article>
               <aside className="w-2/6 items-center flex flex-col justify-between gap-5">
-                <button className="rounded-sm w-36 md:w-auto  font-bebas py-2 text-lg shadowBlueBoton">view code</button>
-                <button className="rounded-sm w-36 md:w-auto  font-bebas py-2 text-lg shadowYellowBoton">view project</button>
+                <button className="rounded-sm w-28 md:w-full max-w-[272px]  font-bebas py-2 text-lg shadowBlueBoton">view code</button>
+                <button className="rounded-sm w-28 md:w-full max-w-[272px]  font-bebas py-2 text-lg shadowYellowBoton">view project</button>
               </aside>
             </section>
           </div>
