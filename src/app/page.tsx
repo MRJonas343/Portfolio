@@ -78,10 +78,10 @@ const Home = () => {
       </section>
 
 
-      <section className="w-full h-auto pb-4 px-2 md:px-4">
+      <section className="mx-4 h-auto pb-4 px-2 md:px-4">
         <h2 className="text-5xl text-green-500 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</h2>
 
-        <section className="p-6 flex flex-col lg:flex-row mb-4">
+        <section className="px-4 py-10 flex flex-col lg:flex-row">
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
@@ -116,7 +116,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="p-6 flex flex-col lg:flex-row mb-5 lg:mb-6">
+        <section className="px-4 py-10 flex flex-col lg:flex-row">
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
@@ -151,7 +151,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="p-6 flex flex-col lg:flex-row">
+        <section className="px-4 py-10 flex flex-col lg:flex-row">
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
