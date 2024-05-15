@@ -78,10 +78,10 @@ const Home = () => {
       </section>
 
 
-      <section className="mx-4 h-auto pb-4 px-2 md:px-4">
+      <section className="mx-2 md:mx4 h-auto pb-4 px-2 md:px-4">
         <h2 className="text-5xl text-green-500 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</h2>
 
-        <section className="px-4 py-10 flex flex-col lg:flex-row">
+        <section className="py-10 md:px-4 flex flex-col lg:flex-row">
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
@@ -108,15 +108,15 @@ const Home = () => {
                   <img className="w-10" src="/mysql.svg" alt="" />
                 </aside>
               </article>
-              <aside className="w-2/6 flex flex-col justify-between">
-                <button className="rounded-sm font-bebas py-2 text-lg shadowBlueBoton">view code</button>
-                <button className="rounded-sm font-bebas py-2 text-lg shadowYellowBoton">view project</button>
+              <aside className="w-2/6 flex flex-col justify-between items-center">
+                <button className="rounded-sm font-bebas w-36 md:w-auto py-2 text-lg shadowBlueBoton">view code</button>
+                <button className="rounded-sm font-bebas w-36 md:w-auto  py-2 text-lg shadowYellowBoton">view project</button>
               </aside>
             </section>
           </div>
         </section>
 
-        <section className="px-4 py-10 flex flex-col lg:flex-row">
+        <section className="py-10  md:px-4 flex flex-col lg:flex-row">
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
@@ -143,15 +143,15 @@ const Home = () => {
                   <img className="w-6" src="/mongodb.svg" alt="" />
                 </aside>
               </article>
-              <aside className="w-2/6 flex flex-col justify-between">
-                <button className="rounded-sm font-bebas py-2 text-lg shadowBlueBoton">view code</button>
-                <button className="rounded-sm font-bebas py-2 text-lg shadowYellowBoton">view project</button>
+              <aside className="w-2/6 items-center flex flex-col justify-between">
+                <button className="rounded-sm w-36 md:w-auto  font-bebas py-2 text-lg shadowBlueBoton">view code</button>
+                <button className="rounded-sm w-36 md:w-auto  font-bebas py-2 text-lg shadowYellowBoton">view project</button>
               </aside>
             </section>
           </div>
         </section>
 
-        <section className="px-4 py-10 flex flex-col lg:flex-row">
+        <section className="py-10 md:px-4 flex flex-col lg:flex-row">
 
           <div className="lg:w-[40%]">
             <div className="flex w-full justify-center lg:items-center lg:h-full">
@@ -172,9 +172,9 @@ const Home = () => {
                   <img className="w-10" src="/tailwindcss.svg" alt="" />
                 </aside>
               </article>
-              <aside className="w-2/6 flex flex-col justify-between gap-5">
-                <button className="rounded-sm font-bebas py-2 text-lg shadowBlueBoton">view code</button>
-                <button className="rounded-sm font-bebas py-2 text-lg shadowYellowBoton">view project</button>
+              <aside className="w-2/6 items-center flex flex-col justify-between gap-5">
+                <button className="rounded-sm w-36 md:w-auto  font-bebas py-2 text-lg shadowBlueBoton">view code</button>
+                <button className="rounded-sm w-36 md:w-auto  font-bebas py-2 text-lg shadowYellowBoton">view project</button>
               </aside>
             </section>
           </div>
