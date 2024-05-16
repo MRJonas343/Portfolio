@@ -29,15 +29,21 @@ const Home = () => {
 	const [textPurple, setTextPurple] = useState(
 		"text-3xl lg:text-5xl pt-1 text-purple-700 textShadow",
 	)
-	const [iconClassName, setIconClassName] = useState("w-10 h-10 iconShadow")
+	const [iconClassName, setIconClassName] = useState(
+		"w-10 h-10 iconShadow",
+	)
 
 	useEffect(() => {
 		setInterval(() => {
 			setPurpleClassName(
 				"w-1 h-[35vh] shadowPurple lg:h-[40vh] shadowPurpleBright md:w-3",
 			)
-			setGreenClassName("w-1 h-[45vh] lg:h-[50vh] shadowGreenBright md:w-3")
-			setPinkClassName("w-1 h-[28vh] lg:h-[30vh] shadowPinkBright md:w-3")
+			setGreenClassName(
+				"w-1 h-[45vh] lg:h-[50vh] shadowGreenBright md:w-3",
+			)
+			setPinkClassName(
+				"w-1 h-[28vh] lg:h-[30vh] shadowPinkBright md:w-3",
+			)
 			setBlueClassName(
 				"w-1 h-[20vh] shadowBlue lg:h-[20vh] shadowBlueBright md:w-3",
 			)
@@ -50,12 +56,18 @@ const Home = () => {
 			setIconClassName("w-10 h-10 iconShadowBright")
 		}, 2000)
 		setInterval(() => {
-			setPurpleClassName("w-1 h-[35vh] shadowPurple lg:h-[40vh] md:w-3")
+			setPurpleClassName(
+				"w-1 h-[35vh] shadowPurple lg:h-[40vh] md:w-3",
+			)
 			setGreenClassName("w-1 h-[45vh] shadowGreen lg:h-[50vh] md:w-3")
 			setPinkClassName("w-1 h-[28vh] shadowPink lg:h-[30vh] md:w-3")
 			setBlueClassName("w-1 h-[20vh] shadowBlue lg:h-[20vh] md:w-3")
-			setTextGreenClassName("text-3xl  lg:text-5xl text-green-500 textShadow")
-			setTextPurple("text-3xl lg:text-5xl pt-1 text-purple-700 textShadow")
+			setTextGreenClassName(
+				"text-3xl  lg:text-5xl text-green-500 textShadow",
+			)
+			setTextPurple(
+				"text-3xl lg:text-5xl pt-1 text-purple-700 textShadow",
+			)
 			setIconClassName("w-10 h-10 iconShadow")
 		}, 4000)
 	}, [])
@@ -72,13 +84,16 @@ const Home = () => {
 	async function getForm(data: object) {
 		try {
 			const BeeSMRTBackendURL = ""
-			const response = await fetch(`BeeSMRTBackendURL + '/contactMessage`, {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
+			const response = await fetch(
+				`BeeSMRTBackendURL + '/contactMessage`,
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(data),
 				},
-				body: JSON.stringify(data),
-			})
+			)
 
 			if (response.status === 200) {
 				// setImageSrc(ShyBee)
@@ -109,9 +124,15 @@ const Home = () => {
 					<div>
 						<h2 className="text-white text-3xl">Jonas Rosales</h2>
 						<span className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300 dark:before:border-neutral-500 dark:after:border-neutral-500" />
-						<p className={textGreenClassName}>Software Engineering Student</p>
+						<p className={textGreenClassName}>
+							Software Engineering Student
+						</p>
 						<div className="flex py-2 gap-3 items-center">
-							<img className={iconClassName} src="/plus.png" alt="plus" />
+							<img
+								className={iconClassName}
+								src="/plus.png"
+								alt="plus"
+							/>
 							<p className={textPurple}>Web Development Enthusiast</p>
 						</div>
 						<div className="flex w-full justify-between py-4 items-center">
@@ -170,23 +191,36 @@ const Home = () => {
 								BeeSMRT Games
 							</h3>
 							<p className="text-white font-oswald">
-								BeeSMRT is a web application that allows users to practice their
-								English through role-playing games, this is my most ambitious
-								application in which I have implemented a lot of technologies
-								and libraries and I am not even 10% of the final project.
+								BeeSMRT is a web application that allows users to
+								practice their English through role-playing games,
+								this is my most ambitious application in which I have
+								implemented a lot of technologies and libraries and I
+								am not even 10% of the final project.
 							</p>
 						</div>
 
 						<section className="flex py-4">
 							<article className="flex gap-8 flex-col w-4/6">
 								<aside className="flex justify-around">
-									<img className="w-10" src="/vitejs.svg" alt="vite" />
-									<img className="w-10" src="/typescript.svg" alt="ts" />
+									<img
+										className="w-10"
+										src="/vitejs.svg"
+										alt="vite"
+									/>
+									<img
+										className="w-10"
+										src="/typescript.svg"
+										alt="ts"
+									/>
 									<img className="w-10" src="/react.svg" alt="rc" />
 								</aside>
 								<aside className="flex justify-around">
 									<img className="w-10" src="/nodejs.svg" alt="nd" />
-									<img className="w-10" src="/expressjs_dark.svg" alt="ex" />
+									<img
+										className="w-10"
+										src="/expressjs_dark.svg"
+										alt="ex"
+									/>
 									<img className="w-10" src="/mysql.svg" alt="sql" />
 								</aside>
 							</article>
@@ -225,23 +259,39 @@ const Home = () => {
 								Portfolio
 							</h3>
 							<p className="text-white font-oswald">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
-								perferendis laborum odio a ex, adipisci est atque repellendus
-								nam sunt ullam officiis consequatur incidunt optio eum dolore.
-								Consequuntur, cum optio.
+								Lorem ipsum, dolor sit amet consectetur adipisicing
+								elit. Quia perferendis laborum odio a ex, adipisci est
+								atque repellendus nam sunt ullam officiis consequatur
+								incidunt optio eum dolore. Consequuntur, cum optio.
 							</p>
 						</div>
 
 						<section className="flex py-4">
 							<article className="flex gap-8 flex-col w-4/6">
 								<aside className="flex justify-around">
-									<img className="w-12" src="/nextjs_logo_dark.svg" alt="" />
-									<img className="w-10" src="/typescript.svg" alt="" />
+									<img
+										className="w-12"
+										src="/nextjs_logo_dark.svg"
+										alt=""
+									/>
+									<img
+										className="w-10"
+										src="/typescript.svg"
+										alt=""
+									/>
 									<img className="w-10" src="/react.svg" alt="" />
 								</aside>
 								<aside className="flex justify-around">
-									<img className="w-10" src="/tailwindcss.svg" alt="" />
-									<img className="w-10" src="/prisma_dark.svg" alt="" />
+									<img
+										className="w-10"
+										src="/tailwindcss.svg"
+										alt=""
+									/>
+									<img
+										className="w-10"
+										src="/prisma_dark.svg"
+										alt=""
+									/>
 									<img className="w-6" src="/mongodb.svg" alt="" />
 								</aside>
 							</article>
@@ -280,8 +330,8 @@ const Home = () => {
 								Managment Static Web Page
 							</h3>
 							<p className="text-white font-oswald">
-								Static website I developed when I was learning responsive design
-								with Tailwind and semantic html.
+								Static website I developed when I was learning
+								responsive design with Tailwind and semantic html.
 							</p>
 						</div>
 
@@ -289,7 +339,11 @@ const Home = () => {
 							<article className="flex gap-8 flex-col w-4/6">
 								<aside className="flex justify-around">
 									<img className="w-12" src="/html5.svg" alt="" />
-									<img className="w-10" src="/tailwindcss.svg" alt="" />
+									<img
+										className="w-10"
+										src="/tailwindcss.svg"
+										alt=""
+									/>
 								</aside>
 							</article>
 							<aside className="w-2/6 items-center flex flex-col justify-between gap-5">
@@ -343,9 +397,11 @@ const Home = () => {
 					<div className="flex flex-col mx-4 md:w-2/3 md:justify-center">
 						<p className="text-white font-oswald">
 							You have a{" "}
-							<span className="text-red-600 textShadowBright">crazy idea</span>,
-							then I am the ideal developer for you. I am familiar with the
-							entire development process, from{" "}
+							<span className="text-red-600 textShadowBright">
+								crazy idea
+							</span>
+							, then I am the ideal developer for you. I am familiar
+							with the entire development process, from{" "}
 							<span className="text-blue-600 textShadowBright">
 								requirements
 							</span>{" "}
@@ -357,19 +413,23 @@ const Home = () => {
 						</p>
 
 						<p className="text-white font-oswald py-4">
-							Apart from coding, I do other activities such as taekwondo,
-							calisthenics, and a lot of physical activity.
+							Apart from coding, I do other activities such as
+							taekwondo, calisthenics, and a lot of physical activity.
 						</p>
 
 						<span className="text-white font-oswald text-center py-4 text-2xl mb-4">
 							Soft Skills:
 						</span>
 						<ul className="text-white font-oswald flex w-full justify-around">
-							<li className="text-purple-600 textShadowBright">Proactive</li>
+							<li className="text-purple-600 textShadowBright">
+								Proactive
+							</li>
 							<li className="textShadowBright text-yellow-400">
 								Communication
 							</li>
-							<li className="textShadowBright text-orange-600">Teamwork</li>
+							<li className="textShadowBright text-orange-600">
+								Teamwork
+							</li>
 						</ul>
 					</div>
 				</article>
@@ -413,7 +473,9 @@ const Home = () => {
 										})}
 									/>
 									{errors.name?.type === "required" && (
-										<p className="text-red-600">This field is required</p>
+										<p className="text-red-600">
+											This field is required
+										</p>
 									)}
 									{errors.name?.type === "maxLength" && (
 										<p className="text-red-600">
@@ -444,7 +506,9 @@ const Home = () => {
 										})}
 									/>
 									{errors.message?.type === "required" && (
-										<p className="text-red-600">This field is required</p>
+										<p className="text-red-600">
+											This field is required
+										</p>
 									)}
 									{errors.message?.type === "maxLength" && (
 										<p className="text-red-600">
