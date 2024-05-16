@@ -1,65 +1,81 @@
 [
     {
+        "id" : 1,
         "src": "/html5.svg",
         "alt": "HTML5"
     },
     {
+        "id" : 2,
         "src": "/css.svg",
         "alt": "CSS3"
     },
     {
+        "id" : 3,
         "src": "/tailwindcss.svg",
         "alt": "TailwindCSS"
     },
     {
+        "id" : 4,
         "src": "/javascript.svg",
         "alt": "JavaScript"
     },
     {
+        "id" : 5,
         "src": "/typescript.svg",
         "alt": "TypeScript"
     },
     {
+        "id" : 6,
         "src": "/react.svg",
         "alt": "React"
     },
     {
+        "id" : 7,
         "src": "/nextjs_logo_dark.svg",
         "alt": "NextJS"
     },
     {
+        "id" : 8,
         "src": "/vitejs.svg",
         "alt": "ViteJS"
     },
     {
+        "id" : 9,
         "src": "/nodejs.svg",
         "alt": "NodeJS"
     },
     {
+        "id" : 10,
         "src": "/expressjs_dark.svg",
         "alt": "ExpressJS"
     },
     {
+        "id" : 11,
         "src": "/mysql.svg",
         "alt": "MySQL"
     },
     {
+        "id" : 12,
         "src": "/sql-server.svg",
         "alt": "SQL Server"
     },
     {
+        "id" : 13,
         "src": "/firebase.svg",
         "alt": "Firebase"
     },
     {
+        "id" : 14,
         "src": "/mongodb.svg",
         "alt": "MongoDB"
     },
     {
+        "id" : 15,
         "src": "/prisma_dark.svg",
         "alt": "Prisma"
     },
     {
+        "id" : 16,
         "src": "/aws.svg",
         "alt": "AWS"
     }
