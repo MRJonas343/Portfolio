@@ -253,7 +253,7 @@ const Home = () => {
 
         <h2 className="text-5xl text-green-700 textShadowBright font-bebas text-center animate-slide-in-bottom pt-14 pb-6">Contact me</h2>
 
-        <section className="flex flex-col items-center">
+        <section className="flex flex-col items-center mb-10">
           <div className="max-w-[800px] flex flex-col w-full">
             <div className="w-full flex flex-col gap-6 py-4 font-oswald pl-2">
               <div className="text-white flex gap-4">
