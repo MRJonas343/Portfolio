@@ -8,20 +8,8 @@
         "alt": "CSS3"
     },
     {
-        "src": "/bootstrap.svg",
-        "alt": "Bootstrap"
-    },
-    {
         "src": "/tailwindcss.svg",
         "alt": "TailwindCSS"
-    },
-    {
-        "src": "/java.svg",
-        "alt": "Java"
-    },
-    {
-        "src": "/php_dark.svg",
-        "alt": "php"
     },
     {
         "src": "/javascript.svg",
@@ -74,9 +62,5 @@
     {
         "src": "/aws.svg",
         "alt": "AWS"
-    },
-    {
-        "src": "/ubuntu.svg",
-        "alt": "Ubuntu Server"
     }
 ]

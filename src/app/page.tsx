@@ -49,7 +49,7 @@ const Home = () => {
         </aside>
         <div className="font-bebas flex flex-col animate-duration-slower animate-fade-in-right p-4  mx-2 justify-end items-center">
           <div>
-            <h2 className={"text-white text-3xl"}>Jonas Rosales</h2>
+            <h2 className="text-white text-3xl">Jonas Rosales</h2>
             <span className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300 dark:before:border-neutral-500 dark:after:border-neutral-500" />
             <p className={textGreenClassName}>Software Engineering Student</p>
             <div className="flex py-2 gap-3 items-center">
@@ -191,7 +191,27 @@ const Home = () => {
           })}
         </article>
 
-        <h2 className="text-5xl text-orange-500    textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">About</h2>
+        <h2 className="text-5xl text-orange-500    textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Who am I?</h2>
+
+
+
+        <article className="mb-4 md:flex md:flex-row md:p-5 max-w-[890px] md:mx-auto">
+          <div className="flex mx-2 py-10 justify-center md:order-1 md:w-1/3">
+            <img className="w-52" src="/hombre.png" />
+          </div>
+          <div className="flex flex-col mx-4 md:w-2/3 md:justify-center">
+            <p className="text-white font-oswald">You have a <span className="text-red-600 textShadowBright">crazy idea</span>, then I am the ideal developer for you. I'm familiar with the entire development process, from <span className="text-blue-600 textShadowBright">requirements</span> gathering to <span className="text-green-600 textShadowBright">deployment</span>. So if you hire me, you'll get a lot of value.</p>
+
+            <p className="text-white font-oswald py-4">Apart from coding, I do other activities such as taekwondo, calisthenics, and a lot of physical activity.</p>
+
+            <span className="text-white font-oswald text-center py-4 text-2xl">Soft Skills:</span>
+            <ul className="text-white font-oswald flex w-full justify-around">
+              <li className="text-purple-600 textShadowBright">Proactive</li>
+              <li className="textShadowBright text-yellow-400">Communication</li>
+              <li className="textShadowBright text-orange-600">Teamwork</li>
+            </ul>
+          </div>
+        </article>
 
 
 
