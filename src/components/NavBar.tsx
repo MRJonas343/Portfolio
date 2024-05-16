@@ -6,7 +6,9 @@ import Link from "next/link"
 const NavBar: React.FC = () => {
 
   const [isExpanded, setIsExpanded] = useState(false)
-  const btnClassName = isExpanded ? 'bg-close-menu w-6 h-6 bg-cover bg-center cursor-pointer transition-all z-40 md:hidden' : 'w-6 h-6 bg-cover bg-center cursor-pointer transition-all z-40 md:hidden bg-open-menu'
+  const btnClassName = isExpanded
+    ? 'bg-close-menu fixed top-4 right-4  w-6 h-6 bg-cover bg-center cursor-pointer transition-all z-40 md:hidden'
+    : 'w-6 h-6 bg-cover fixed top-4 right-4  bg-center cursor-pointer transition-all z-40 md:hidden bg-open-menu'
 
   const changeMenuIcon = () => {
     setIsExpanded(!isExpanded)
@@ -28,16 +30,16 @@ const NavBar: React.FC = () => {
         <div className="lg:mr-28">
           <ul className="tracking-wide backdrop-blur-lg md:outline-none absolute inset-x-0 top-24 p-12 w-[90%] mx-auto rounded-lg h-max text-center grid gap-10 md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static">
             <li className="hover:scale-110 hoverText hoverTextBlue">
-              <Link href='/LogIn'>Projects</Link>
+              <a href="#projects">Projects</a>
             </li>
             <li className="hover:scale-110 hoverText hoverTextGreen">
-              <Link href='/Contact'>Skills</Link>
+              <a href="#skills">Skills</a>
             </li>
             <li className="hover:scale-110 hoverText hoverTextPink">
-              <Link href='/About'>About</Link>
+              <a href="#about">About</a>
             </li>
             <li className="hover:scale-110 hoverText hoverTextPink">
-              <Link href='/About'>Contact</Link>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -45,16 +47,16 @@ const NavBar: React.FC = () => {
 
       <ul className="tracking-wide hidden backdrop-blur-lg  h-max md:grid gap-10 w-max md:bg-transparent md:grid-flow-col">
         <li className="hover:scale-110 hoverText hoverTextBlue">
-          <Link href='/LogIn'>Projects</Link>
+          <a href="#projects">Projects</a>
         </li>
         <li className="hover:scale-110 hoverText hoverTextGreen">
-          <Link href='/Contact'>Skills</Link>
+          <a href="#skills">Skills</a>
         </li>
         <li className="hover:scale-110 hoverText hoverTextPink">
-          <Link href='/About'>About</Link>
+          <a href="#about">About</a>
         </li>
         <li className="hover:scale-110 hoverText hoverTextPink">
-          <Link href='/About'>Contact</Link>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 

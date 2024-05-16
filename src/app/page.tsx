@@ -116,7 +116,7 @@ const Home = () => {
 
 
       <section className="mx-2 md:mx4 h-auto pb-4 px-2 md:px-4">
-        <h2 className="text-5xl text-green-500 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</h2>
+        <h2 id="projects" className="text-5xl text-green-500 textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Projects</h2>
 
         <section className="py-10 md:px-4 flex flex-col lg:flex-row">
 
@@ -218,7 +218,7 @@ const Home = () => {
         </section>
 
 
-        <h2 className="text-5xl text-[#0f73d7] textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Skills</h2>
+        <h2 id="skills" className="text-5xl text-[#0f73d7] textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Skills</h2>
 
         <article className="grid grid-cols-2 gap-7 place-items-center mt-6 h-auto pb-4 md:grid-cols-4 lg:gap-12 lg:mx-10 xl:mx-32">
           {Skils.map((skill, index) => {
@@ -228,7 +228,7 @@ const Home = () => {
           })}
         </article>
 
-        <h2 className="text-5xl text-orange-500 textShadowBright pb-4 font-bebas text-center pt-14 animate-slide-in-bottom">Who am I?</h2>
+        <h2 id="about" className="text-5xl text-orange-500 textShadowBright pb-4 font-bebas text-center pt-14 animate-slide-in-bottom">Who am I?</h2>
 
 
 
@@ -251,7 +251,7 @@ const Home = () => {
         </article>
 
 
-        <h2 className="text-5xl text-green-700 textShadowBright font-bebas text-center animate-slide-in-bottom pt-14 pb-6">Contact me</h2>
+        <h2 id="contact" className="text-5xl text-green-700 textShadowBright font-bebas text-center animate-slide-in-bottom pt-14 pb-6">Contact me</h2>
 
         <section className="flex flex-col items-center mb-10">
           <div className="max-w-[800px] flex flex-col w-full">
