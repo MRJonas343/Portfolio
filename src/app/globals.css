@@ -68,7 +68,7 @@ body {
 
 .shadowBlueBright {
   background-image: linear-gradient(rgb(59 130 246), 80%, transparent);
-  box-shadow: #0f73d7 0px px 20px;
+  box-shadow: #0f73d7 0px -10px 20px;
   filter: brightness(2);
   transition: ease-in-out 1s;
 }
