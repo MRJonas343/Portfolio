@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useForm } from "react-hook-form"
 import NavBar from "@/components/NavBar"
 import IconSkill from "@/components/IconSkill"
 import GitHubIcon from '@mui/icons-material/GitHub'
@@ -38,8 +39,42 @@ const Home = () => {
     }, 4000)
   }, [])
 
+  //* Form (React Hook Form)
+  const { register, formState: { errors }, handleSubmit, reset } = useForm()
+
+
+  //* Function to send the form
+  async function getForm(data: object) {
+    try {
+      const BeeSMRTBackendURL = ""
+      const response = await fetch(BeeSMRTBackendURL + '/contactMessage', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      })
+
+      if (response.status === 200) {
+        // setImageSrc(ShyBee)
+        // setMessage("Thank you for contacting us! We will get back to you as soon as possible.")
+        // setMainMessage("Message sent")
+        // setShowModal(!showModal)
+      } else {
+        // setImageSrc(AngryBee)
+        // setMessage("An error has occurred, try again later.")
+        // setMainMessage("Error")
+        // setShowModal(!showModal)
+      }
+
+    } catch (error) {
+      console.error("Error:", error)
+    }
+    reset()
+  }
 
   return (
+
     <>
       <NavBar />
 
@@ -191,7 +226,7 @@ const Home = () => {
           })}
         </article>
 
-        <h2 className="text-5xl text-orange-500    textShadowBright pb-4 font-bebas text-center pt-10 animate-slide-in-bottom">Who am I?</h2>
+        <h2 className="text-5xl text-orange-500 textShadowBright pb-4 font-bebas text-center pt-14 animate-slide-in-bottom">Who am I?</h2>
 
 
 
@@ -212,6 +247,60 @@ const Home = () => {
             </ul>
           </div>
         </article>
+
+
+        <h2 className="text-5xl text-green-700 textShadowBright font-bebas text-center animate-slide-in-bottom pt-14 pb-6">Contact me</h2>
+
+        <section className="flex flex-col items-center">
+          <div className="max-w-[800px] flex flex-col w-full">
+            <form onSubmit={handleSubmit(getForm)}>
+              <div className="p-2 w-full">
+                <div className="relative">
+                  <label htmlFor="name" className="font-oswald py-4 text-lg md:text-xl text-white">Your Name</label>
+                  <input id="name" type="text" className="w-full text-white mt-2 font-Secundaria bg-[#374151] rounded  focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
+                    {...register("name", {
+                      required: true,
+                      maxLength: 100,
+                      pattern: /^[A-Za-z]+$/i
+                    })} />
+                  {
+                    errors.name?.type === "required" &&
+                    <p className="text-red-600">This field is required</p>
+                  }
+                  {
+                    errors.name?.type === "maxLength" &&
+                    <p className="text-red-600">Your name can not be longer that 100 letters</p>
+                  }
+                  {
+                    errors.name?.type === "pattern" &&
+                    <p className="text-red-600">Your name should just have letters</p>
+                  }
+                </div>
+              </div>
+              <div className="p-2 w-full">
+                <div className="relative">
+                  <label htmlFor="message" className="text-white text-lg font-oswald md:text-xl">Type your message</label>
+                  <textarea id="message" className="w-full bg-[#374151] text-white mt-2 rounded  focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "
+                    {...register("message", {
+                      required: true,
+                      maxLength: 500,
+                    })} />
+                  {
+                    errors.message?.type === "required" &&
+                    <p className="text-red-600">This field is required</p>
+                  }
+                  {
+                    errors.message?.type === "maxLength" &&
+                    <p className="text-red-600">Your message can not be longer that 500 letters</p>
+                  }
+                </div>
+              </div>
+              <div className="p-4  mt-2">
+                <button className="rounded-sm w-36 md:w-full max-w-[272px]  font-bebas py-2 text-xl shadowBlueBoton">Submit 📬</button>
+              </div>
+            </form>
+          </div>
+        </section>
 
 
 
