@@ -241,7 +241,7 @@ const Home = () => {
 
             <p className="text-white font-oswald py-4">Apart from coding, I do other activities such as taekwondo, calisthenics, and a lot of physical activity.</p>
 
-            <span className="text-white font-oswald text-center py-4 text-2xl">Soft Skills:</span>
+            <span className="text-white font-oswald text-center py-4 text-2xl mb-4">Soft Skills:</span>
             <ul className="text-white font-oswald flex w-full justify-around">
               <li className="text-purple-600 textShadowBright">Proactive</li>
               <li className="textShadowBright text-yellow-400">Communication</li>
