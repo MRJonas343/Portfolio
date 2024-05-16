@@ -200,7 +200,7 @@ const Home = () => {
             <img className="w-52" src="/hombre.png" />
           </div>
           <div className="flex flex-col mx-4 md:w-2/3 md:justify-center">
-            <p className="text-white font-oswald">You have a <span className="text-red-600 textShadowBright">crazy idea</span>, then I am the ideal developer for you. I'm familiar with the entire development process, from <span className="text-blue-600 textShadowBright">requirements</span> gathering to <span className="text-green-600 textShadowBright">deployment</span>. So if you hire me, you'll get a lot of value.</p>
+            <p className="text-white font-oswald">You have a <span className="text-red-600 textShadowBright">crazy idea</span>, then I am the ideal developer for you. I am familiar with the entire development process, from <span className="text-blue-600 textShadowBright">requirements</span> gathering to <span className="text-green-600 textShadowBright">deployment</span>. So if you hire me, you will get a lot of value.</p>
 
             <p className="text-white font-oswald py-4">Apart from coding, I do other activities such as taekwondo, calisthenics, and a lot of physical activity.</p>
 
