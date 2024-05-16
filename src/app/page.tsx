@@ -5,7 +5,9 @@ import { useForm } from "react-hook-form"
 import NavBar from "@/components/NavBar"
 import IconSkill from "@/components/IconSkill"
 import GitHubIcon from '@mui/icons-material/GitHub'
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
+import EmailIcon from '@mui/icons-material/Email'
 import Skils from "./Skills.json"
 
 const Home = () => {
@@ -253,6 +255,16 @@ const Home = () => {
 
         <section className="flex flex-col items-center">
           <div className="max-w-[800px] flex flex-col w-full">
+            <div className="w-full flex flex-col gap-6 py-4 font-oswald pl-2">
+              <div className="text-white flex gap-4">
+                <LocalPhoneIcon />
+                <p>Mobile: +52 (984) 143-3126</p>
+              </div>
+              <div className="text-white flex gap-4">
+                <EmailIcon />
+                <p>angeljonasrosales@gmail.com</p>
+              </div>
+            </div>
             <form onSubmit={handleSubmit(getForm)}>
               <div className="p-2 w-full">
                 <div className="relative">
