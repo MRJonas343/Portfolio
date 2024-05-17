@@ -112,6 +112,15 @@ const Home = () => {
 		reset()
 	}
 
+	const RedirectGithub = () => {
+		window.location.href = "https://github.com/MRJonas343"
+	}
+
+	const RedirectLinkedIn = () => {
+		window.location.href =
+			"https://www.linkedin.com/in/angel-jonas-rosales-gonzalez-29b577285/"
+	}
+
 	return (
 		<>
 			<NavBar />
@@ -139,10 +148,12 @@ const Home = () => {
 							<GitHubIcon
 								sx={{ fontSize: "2rem" }}
 								className="iconGithub cursor-pointer"
+								onClick={RedirectGithub}
 							/>
 							<LinkedInIcon
 								sx={{ fontSize: "2rem" }}
 								className="iconLinkedIn cursor-pointer"
+								onClick={RedirectLinkedIn}
 							/>
 							<button
 								type="button"
@@ -228,12 +239,20 @@ const Home = () => {
 								<button
 									type="button"
 									className="rounded-sm font-bebas w-28 md:w-full max-w-[272px] py-2 text-lg shadowBlueBoton"
+									onClick={() => {
+										window.location.href =
+											"https://github.com/MRJonas343/BeeSMRT2"
+									}}
 								>
 									view code
 								</button>
 								<button
 									type="button"
 									className="rounded-sm font-bebas w-28 md:w-full max-w-[272px]  py-2 text-lg shadowYellowBoton"
+									onClick={() => {
+										window.location.href =
+											"https://beesmrt2.vercel.app/"
+									}}
 								>
 									view project
 								</button>
@@ -299,12 +318,20 @@ const Home = () => {
 								<button
 									className="rounded-sm w-28 md:w-full max-w-[272px]  font-bebas py-2 text-lg shadowBlueBoton"
 									type="button"
+									onClick={() => {
+										window.location.href =
+											"https://github.com/MRJonas343/Portfolio"
+									}}
 								>
 									view code
 								</button>
 								<button
 									className="rounded-sm w-28 md:w-full max-w-[272px]  font-bebas py-2 text-lg shadowYellowBoton"
 									type="button"
+									onClick={() => {
+										window.location.href =
+											"https://jonas-one.vercel.app/"
+									}}
 								>
 									view project
 								</button>
@@ -350,12 +377,20 @@ const Home = () => {
 								<button
 									className="rounded-sm w-28 md:w-full max-w-[272px]  font-bebas py-2 text-lg shadowBlueBoton"
 									type="button"
+									onClick={() => {
+										window.location.href =
+											"https://github.com/MRJonas343/MRJonas343.Managment.io"
+									}}
 								>
 									view code
 								</button>
 								<button
 									className="rounded-sm w-28 md:w-full max-w-[272px]  font-bebas py-2 text-lg shadowYellowBoton"
 									type="button"
+									onClick={() => {
+										window.location.href =
+											"https://mrjonas343.github.io/MRJonas343.Managment.io/"
+									}}
 								>
 									view project
 								</button>
