@@ -13,10 +13,16 @@
     "@emotion/styled": "^11.11.5",
     "@midudev/tailwind-animations": "^0.0.7",
     "@mui/icons-material": "^5.15.17",
+    "@types/nodemailer": "^6.4.15",
+    "cors": "^2.8.5",
     "next": "14.2.3",
+    "next-connect": "^1.0.0",
+    "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.51.4"
+    "react-hook-form": "^7.51.4",
+    "sweetalert2": "^11.12.1",
+    "sweetalert2-react-content": "^5.0.7"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.3",

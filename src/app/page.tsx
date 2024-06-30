@@ -9,6 +9,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone"
 import EmailIcon from "@mui/icons-material/Email"
 import Skils from "./Skills.json"
+import { DataContact } from "./types"
+import Swal from "sweetalert2"
+import withReactContent from "sweetalert2-react-content"
 
 const Home = () => {
 	const [purpleClassName, setPurpleClassName] = useState(
@@ -78,39 +81,39 @@ const Home = () => {
 		formState: { errors },
 		handleSubmit,
 		reset,
-	} = useForm()
+	} = useForm<DataContact>()
 
 	//* Function to send the form
-	async function getForm(data: object) {
-		try {
-			const BeeSMRTBackendURL = ""
-			const response = await fetch(
-				`BeeSMRTBackendURL + '/contactMessage`,
-				{
-					method: "POST",
-					headers: {
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify(data),
-				},
-			)
+	async function getForm(data: DataContact) {
+		const response = await fetch("/api/emails", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(data),
+		})
 
-			if (response.status === 200) {
-				// setImageSrc(ShyBee)
-				// setMessage("Thank you for contacting us! We will get back to you as soon as possible.")
-				// setMainMessage("Message sent")
-				// setShowModal(!showModal)
-			} else {
-				// setImageSrc(AngryBee)
-				// setMessage("An error has occurred, try again later.")
-				// setMainMessage("Error")
-				// setShowModal(!showModal)
-			}
-		} catch (error) {
-			console.error("Error:", error)
+		const result = await response.json()
+
+		if (result.message === "Email sent") {
+			MySwal.fire({
+				title: "Email sent",
+				icon: "success",
+				text: "I will contact you soon",
+				background: "#1a202c",
+				color: "#fff",
+			})
+		} else {
+			MySwal.fire({
+				title: "Error",
+				icon: "error",
+				text: "An error occurred, try again later",
+			})
 		}
+
 		reset()
 	}
+	const MySwal = withReactContent(Swal)
 
 	const RedirectGithub = () => {
 		window.location.href = "https://github.com/MRJonas343"
@@ -522,6 +525,37 @@ const Home = () => {
 											Your name should just have letters
 										</p>
 									)}
+									<p className="text-[#151327]">"</p>
+									<label
+										htmlFor="email"
+										className="font-oswald text-lg md:text-xl text-white"
+									>
+										Your Email
+									</label>
+									<input
+										id="email"
+										type="email"
+										className="w-full text-white font-Secundaria bg-[#374151] rounded focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none py-2 px-1 leading-8 transition-colors duration-200 ease-in-out "
+										{...register("email", {
+											required: true,
+											maxLength: 100,
+										})}
+									/>
+									{errors.email?.type === "required" && (
+										<p className="text-red-600">
+											This field is required
+										</p>
+									)}
+									{errors.email?.type === "maxLength" && (
+										<p className="text-red-600">
+											Your email can not be longer that 100 letters
+										</p>
+									)}
+									{errors.email?.type === "pattern" && (
+										<p className="text-red-600">
+											Your email should just have letters
+										</p>
+									)}
 								</div>
 							</div>
 							<div className="p-2 w-full">
@@ -533,19 +567,19 @@ const Home = () => {
 										Type your message
 									</label>
 									<textarea
-										id="message"
+										id="Message"
 										className="w-full bg-[#374151] text-white mt-2 rounded  focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "
-										{...register("message", {
+										{...register("Message", {
 											required: true,
 											maxLength: 500,
 										})}
 									/>
-									{errors.message?.type === "required" && (
+									{errors.Message?.type === "required" && (
 										<p className="text-red-600">
 											This field is required
 										</p>
 									)}
-									{errors.message?.type === "maxLength" && (
+									{errors.Message?.type === "maxLength" && (
 										<p className="text-red-600">
 											Your message can not be longer that 500 letters
 										</p>
