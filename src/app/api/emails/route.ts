@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
 	}
 
 	try {
-		const result = await transporter.sendMail(mailOptions)
+		await transporter.sendMail(mailOptions)
 	} catch (error) {
 		console.log(error)
 	}
