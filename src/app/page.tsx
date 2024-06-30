@@ -569,17 +569,17 @@ const Home = () => {
 									<textarea
 										id="Message"
 										className="w-full bg-[#374151] text-white mt-2 rounded  focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out "
-										{...register("Message", {
+										{...register("message", {
 											required: true,
 											maxLength: 500,
 										})}
 									/>
-									{errors.Message?.type === "required" && (
+									{errors.message?.type === "required" && (
 										<p className="text-red-600">
 											This field is required
 										</p>
 									)}
-									{errors.Message?.type === "maxLength" && (
+									{errors.message?.type === "maxLength" && (
 										<p className="text-red-600">
 											Your message can not be longer that 500 letters
 										</p>
