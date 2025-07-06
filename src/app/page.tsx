@@ -525,7 +525,7 @@ const Home = () => {
 											Your name should just have letters
 										</p>
 									)}
-									<p className="text-[#151327]">"</p>
+									<p className="text-[#151327]">&quot;</p>
 									<label
 										htmlFor="email"
 										className="font-oswald text-lg md:text-xl text-white"
