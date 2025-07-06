@@ -1,82 +1,137 @@
 [
     {
         "id" : 1,
-        "src": "/html5.svg",
-        "alt": "HTML5"
-    },
-    {
-        "id" : 2,
-        "src": "/css.svg",
-        "alt": "CSS3"
-    },
-    {
-        "id" : 3,
         "src": "/tailwindcss.svg",
         "alt": "TailwindCSS"
     },
     {
-        "id" : 4,
+        "id" : 2,
         "src": "/javascript.svg",
         "alt": "JavaScript"
     },
     {
-        "id" : 5,
+        "id" : 3,
         "src": "/typescript.svg",
         "alt": "TypeScript"
     },
     {
-        "id" : 6,
+        "id" : 4,
         "src": "/react.svg",
         "alt": "React"
     },
     {
-        "id" : 7,
+        "id" : 5,
         "src": "/nextjs_logo_dark.svg",
         "alt": "NextJS"
     },
     {
-        "id" : 8,
+        "id" : 6,
         "src": "/vitejs.svg",
         "alt": "ViteJS"
     },
     {
-        "id" : 9,
+        "id" : 7,
         "src": "/nodejs.svg",
         "alt": "NodeJS"
     },
     {
-        "id" : 10,
+        "id" : 8,
         "src": "/expressjs_dark.svg",
         "alt": "ExpressJS"
     },
     {
-        "id" : 11,
+        "id" : 9,
         "src": "/mysql.svg",
         "alt": "MySQL"
     },
     {
-        "id" : 12,
+        "id" : 10,
         "src": "/sql-server.svg",
         "alt": "SQL Server"
     },
     {
-        "id" : 13,
+        "id" : 11,
         "src": "/firebase.svg",
         "alt": "Firebase"
     },
     {
-        "id" : 14,
+        "id" : 12,
         "src": "/mongodb.svg",
         "alt": "MongoDB"
     },
     {
-        "id" : 15,
+        "id" : 13,
         "src": "/prisma_dark.svg",
         "alt": "Prisma"
     },
     {
-        "id" : 16,
+        "id" : 14,
         "src": "/aws.svg",
         "alt": "AWS"
+    },
+    {
+        "id" : 15,
+        "src": "/docker.svg",
+        "alt": "Docker"
+    },
+    {
+        "id" : 16,
+        "src": "/python.svg",
+        "alt": "Python"
+    },
+    {
+        "id" : 17,
+        "src": "/github-actions.svg",
+        "alt": "GitHub Actions"
+    },
+    {
+        "id" : 18,
+        "src": "/linux.svg",
+        "alt": "Linux"
+    },
+    {
+        "id" : 19,
+        "src": "/tanstack.svg",
+        "alt": "TanStack Router"
+    },
+    {
+        "id" : 20,
+        "src": "/tanstack-query.svg",
+        "alt": "TanStack Query"
+    },
+    {
+        "id" : 21,
+        "src": "/redis.svg",
+        "alt": "Redis"
+    },
+    {
+        "id" : 22,
+        "src": "/websockets.svg",
+        "alt": "WebSockets"
+    },
+    {
+        "id" : 23,
+        "src": "/postgresql.svg",
+        "alt": "PostgreSQL"
+    },
+    {
+        "id" : 24,
+        "src": "/gen-ai.svg",
+        "alt": "Gen AI"
+    },
+    {
+        "id" : 25,
+        "src": "/agents.svg",
+        "alt": "Agents"
+    },
+    {
+        "id" : 26,
+        "src": "/hono.svg",
+        "alt": "Hono.js"
+    },
+    {
+        "id" : 27,
+        "src": "/drizzle.svg",
+        "alt": "Drizzle ORM"
     }
 ]
