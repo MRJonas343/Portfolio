@@ -1,17 +1,17 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { useForm } from "react-hook-form"
-import NavBar from "@/components/NavBar"
 import IconSkill from "@/components/IconSkill"
+import NavBar from "@/components/NavBar"
+import EmailIcon from "@mui/icons-material/Email"
 import GitHubIcon from "@mui/icons-material/GitHub"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone"
-import EmailIcon from "@mui/icons-material/Email"
-import Skils from "./Skills.json"
-import { DataContact } from "./types"
+import { useEffect, useState } from "react"
+import { useForm } from "react-hook-form"
 import Swal from "sweetalert2"
 import withReactContent from "sweetalert2-react-content"
+import Skils from "./Skills.json"
+import { DataContact } from "./types"
 
 const Home = () => {
 	const [purpleClassName, setPurpleClassName] = useState(
