@@ -4,7 +4,7 @@
 		"title": "Form Master",
 		"image": "/form-master.png",
 		"imageAlt": "Form Master",
-		"titleColor": "text-purple-600",
+		"titleColor": "text-green-700",
 		"description": "Form Master is a flexible web application for creating and managing customizable forms, quizzes, surveys, polls, and questionnaires. Users can design reusable templates with different question types, while others can fill them out and view results. It includes user authentication, comments, likes, advanced search, admin controls, and real-time data analysis with interactive charts — all wrapped in a responsive, user-friendly interface.",
 		"technologies": [
 			{
@@ -46,7 +46,7 @@
 		"title": "Real Time Presentation Maker",
 		"image": "/real-time.png",
 		"imageAlt": "Real Time Presentation",
-		"titleColor": "text-blue-600",
+		"titleColor": "text-green-700",
 		"description": "A collaborative presentation tool that allows multiple users to create and edit presentations in real-time. Features include live collaboration, real-time updates, and seamless sharing capabilities.",
 		"technologies": [
 			{
