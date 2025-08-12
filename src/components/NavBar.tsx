@@ -1,6 +1,6 @@
 "use client"
-import { useState } from "react"
 import Link from "next/link"
+import { useState } from "react"
 
 const NavBar: React.FC = () => {
 	const [isExpanded, setIsExpanded] = useState(false)
@@ -14,8 +14,13 @@ const NavBar: React.FC = () => {
 
 	return (
 		<nav className="w-[95%] mx-auto overflow-hidden h-9 mt-4 flex items-center justify-between font-bebas text-3xl text-3d text-white">
-			<Link href="/" className="hover:scale-110 ease-in-out duration-200">
-				<p className="p-2 text-blue-500 textShadowTitle">Jonas Rosales</p>
+			<Link
+				href="/"
+				className="hover:scale-110 ease-in-out duration-200"
+			>
+				<p className="p-2 text-blue-500 textShadowTitle">
+					Jonas Rosales
+				</p>
 			</Link>
 			<label
 				htmlFor="btn-open-menu"
@@ -23,7 +28,11 @@ const NavBar: React.FC = () => {
 				onClick={changeMenuIcon}
 			/>
 
-			<input id="btn-open-menu" type="checkbox" className="peer hidden" />
+			<input
+				id="btn-open-menu"
+				type="checkbox"
+				className="peer hidden"
+			/>
 			<div className="fixed top-0 left-0 w-screen h-screen backdrop-blur-md bg-indigo-950/60  md:bg-transparent flex justify-center items-center inset-0 translate-x-full peer-checked:translate-x-0 transition-transform md:static  md:translate-x-0 z-30 md:hidden">
 				<div className="lg:mr-28">
 					<ul className="tracking-wide backdrop-blur-lg md:outline-none absolute inset-x-0 top-24 p-12 w-[90%] mx-auto rounded-lg h-max text-center grid gap-10 md:w-max md:bg-transparent md:p-0 md:grid-flow-col md:static">
@@ -48,9 +57,6 @@ const NavBar: React.FC = () => {
 				</li>
 				<li className="hover:scale-110 hoverText hoverTextGreen">
 					<a href="#skills">Skills</a>
-				</li>
-				<li className="hover:scale-110 hoverText hoverTextPink">
-					<a href="#about">About</a>
 				</li>
 				<li className="hover:scale-110 hoverText hoverTextPink">
 					<a href="#contact">Contact</a>

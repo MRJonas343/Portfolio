@@ -1,0 +1,143 @@
+[
+	{
+		"id": 1,
+		"title": "Form Master",
+		"image": "/form-master.png",
+		"imageAlt": "Form Master",
+		"titleColor": "text-purple-600",
+		"description": "Form Master is a flexible web application for creating and managing customizable forms, quizzes, surveys, polls, and questionnaires. Users can design reusable templates with different question types, while others can fill them out and view results. It includes user authentication, comments, likes, advanced search, admin controls, and real-time data analysis with interactive charts — all wrapped in a responsive, user-friendly interface.",
+		"technologies": [
+			{
+				"name": "Next.js",
+				"icon": "/nextjs_logo_dark.svg",
+				"alt": "nextjs"
+			},
+			{
+				"name": "TypeScript",
+				"icon": "/typescript.svg",
+				"alt": "ts"
+			},
+			{
+				"name": "React",
+				"icon": "/react.svg",
+				"alt": "rc"
+			},
+			{
+				"name": "Drizzle ORM",
+				"icon": "/drizzle.svg",
+				"alt": "drizzle"
+			},
+			{
+				"name": "Tailwind CSS",
+				"icon": "/tailwindcss.svg",
+				"alt": "tailwind"
+			},
+			{
+				"name": "MySQL",
+				"icon": "/mysql.svg",
+				"alt": "sql"
+			}
+		],
+		"codeUrl": "https://github.com/MRJonas343/form-master",
+		"liveUrl": "https://formmaster.site"
+	},
+	{
+		"id": 2,
+		"title": "Real Time Presentation Maker",
+		"image": "/real-time.png",
+		"imageAlt": "Real Time Presentation",
+		"titleColor": "text-blue-600",
+		"description": "A collaborative presentation tool that allows multiple users to create and edit presentations in real-time. Features include live collaboration, real-time updates, and seamless sharing capabilities.",
+		"technologies": [
+			{
+				"name": "Next.js",
+				"icon": "/nextjs_logo_dark.svg",
+				"alt": "nextjs"
+			},
+			{
+				"name": "TypeScript",
+				"icon": "/typescript.svg",
+				"alt": "ts"
+			},
+			{
+				"name": "React",
+				"icon": "/react.svg",
+				"alt": "react"
+			},
+			{
+				"name": "Tailwind CSS",
+				"icon": "/tailwindcss.svg",
+				"alt": "tailwind"
+			},
+			{
+				"name": "WebSockets",
+				"icon": "/websockets.svg",
+				"alt": "websockets"
+			},
+			{
+				"name": "PostgreSQL",
+				"icon": "/postgresql.svg",
+				"alt": "postgresql"
+			}
+		],
+		"codeUrl": "https://github.com/MRJonas343/Real-Time-Colaborative-Presentation-Maker",
+		"liveUrl": "https://task6-three-omega.vercel.app/"
+	},
+	{
+		"id": 3,
+		"title": "BEESMRT",
+		"image": "/beesmrt.png",
+		"imageAlt": "BEESMRT",
+		"titleColor": "text-green-700",
+		"description": "BEESMRT is a web application to learn English through a fun and engaging games. The games will be even online, its gonna be crazyyyy It is currently being redesigned and is in early development.",
+		"technologies": [
+			{
+				"name": "TanStack Start",
+				"icon": "/tanstack.svg",
+				"alt": "tanstack"
+			},
+			{
+				"name": "TanStack Query",
+				"icon": "/tanstack-query.svg",
+				"alt": "tanstack"
+			},
+			{
+				"name": "Tailwind CSS",
+				"icon": "/tailwindcss.svg",
+				"alt": "tailwind"
+			},
+			{
+				"name": "Hono.js",
+				"icon": "/hono.svg",
+				"alt": "hono"
+			},
+			{
+				"name": "Drizzle ORM",
+				"icon": "/drizzle.svg",
+				"alt": "drizzle"
+			},
+			{
+				"name": "MySQL",
+				"icon": "/mysql.svg",
+				"alt": "mysql"
+			},
+			{
+				"name": "WebSockets",
+				"icon": "/websockets.svg",
+				"alt": "websockets"
+			},
+			{
+				"name": "Redis",
+				"icon": "/redis.svg",
+				"alt": "redis"
+			},
+			{
+				"name": "Docker",
+				"icon": "/docker.svg",
+				"alt": "docker"
+			}
+		],
+		"codeUrl": "https://github.com/MRJonas343/BEESMRT4",
+		"liveUrl": "#"
+	}
+]
