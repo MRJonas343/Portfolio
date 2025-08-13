@@ -168,6 +168,14 @@ export default function Page() {
 							<button
 								type="button"
 								className="rounded-sm font-bebas py-2 w-24 text-md shadowBlueBoton lg:w-28"
+								onClick={() => {
+									const link = document.createElement("a")
+									link.href = "/jonas_rosales.en.pdf"
+									link.download = "Jonas_Rosales_CV.pdf"
+									document.body.appendChild(link)
+									link.click()
+									document.body.removeChild(link)
+								}}
 							>
 								Get my CV
 							</button>
